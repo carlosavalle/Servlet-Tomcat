@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 @WebServlet(name = "sumServlet", value = "/sum-servlet")
-public class StudentServlet extends HttpServlet {
+public class CalculatorServlet extends HttpServlet {
     private String message;
 // receive two number form the index.html, and sum both. Then, it call the response function.
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
