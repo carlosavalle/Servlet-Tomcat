@@ -7,7 +7,7 @@ import javax.servlet.annotation.*;
 @WebServlet(name = "sumServlet", value = "/sum-servlet")
 public class CalculatorServlet extends HttpServlet {
     private String message;
-// receive two number form the index.html, and sum both. Then, it call the response function.
+// receive two numbers from the index.html, and sum both. Then, it calls the response function.
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         if (request.getParameter("num1") != "" && request.getParameter("num1") != "" ) {
@@ -19,7 +19,7 @@ public class CalculatorServlet extends HttpServlet {
             response(response, "Invalid");
         }
     }
-    // receive the result, and show the result to the cliente.
+    // receives the result nd shows the result to the client.
     private void response(HttpServletResponse resp, String result)
             throws IOException {
         PrintWriter out = resp.getWriter();
